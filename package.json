@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://kojidi.github.io/posts-app",
-  "proxy": "https://kojidi.github.io/posts-app",
+  "proxy": "https://github.com/kojidi/posts-app/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
