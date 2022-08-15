@@ -1,0 +1,90 @@
+.post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .top, .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-side {
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .user-avatar {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.15);
+            }
+
+            div {
+
+                display: flex;  
+                flex-direction: column;
+                gap: 2px;
+
+            }
+
+        }
+    }
+
+    .middle {
+        .title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .bottom {
+        .left-side, .right-side {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .icon-count {
+
+                position: relative;
+
+                .count {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: -5px;
+                    right: -8px;
+                    border-radius: 50%;
+                    background-color: #f04343;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+
+            }
+            
+            .heart {
+                font-size: 30px;
+            }
+
+        }
+
+        .right-side {
+            padding-right: 10px;
+        }
+    }
+
+    .icon {
+        font-size: 25px;
+        color: #888;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #333;
+        }
+    }
+}
