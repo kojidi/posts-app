@@ -6,3 +6,7 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
+
+.container {
+  padding: 0 20px;
+}
