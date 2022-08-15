@@ -16,7 +16,7 @@ function App() {
   
 
   const data = async () => {
-    const response = await fetch("/posts");
+    const response = await fetch("/posts/?_sort=id&_order=desc");
     const data = await response.json()
     setPosts(data)
     setIsLoading(false)
