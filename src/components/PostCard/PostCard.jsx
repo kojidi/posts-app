@@ -8,7 +8,7 @@ import PostsContext from '../../context/PostsContext';
 
 const PostCard = ({post}) => {
 
-    const {deletePost, editPost} = useContext(PostsContext)
+    const {deletePost, editPost, likePost} = useContext(PostsContext)
 
     return (
         <Card>
@@ -34,9 +34,9 @@ const PostCard = ({post}) => {
                 <div className="bottom">
                     <div className="left-side">
                         {post.info.likes ? 
-                            <RiHeartFill className="heart liked icon" />
+                            <RiHeartFill className="heart liked icon" onClick={() => likePost(post.id)}/>
                         :
-                            <RiHeartLine className="heart icon" />
+                            <RiHeartLine className="heart icon" onClick={() => likePost(post.id)}/>
                         }
                         <div className="icon-count">
                             <div className="count">{post.info.comments}</div>

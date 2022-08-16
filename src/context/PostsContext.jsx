@@ -60,9 +60,29 @@ export const PostsProvider = ({children}) => {
         })
 
         const data = await response.json();
+        
+        if(response.status === 200 && response.ok === true) {
+            setPosts(posts.map(post => (post.id === data.id ? data : post)))
+            setIsEditing({post: [], edit: false})
+        }
+    }
 
-        setPosts(posts.map(post => (post.id === data.id ? data : post)))
-        setIsEditing({post: [], edit: false})
+    const likePost = async (id) => {
+
+        let likedPost = posts.filter(post => post.id === id)[0];
+        likedPost.info.likes = !likedPost.info.likes;
+
+        const response = await fetch(`/posts/${id}`, {
+            method: 'PUT',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(likedPost)
+        })
+
+        const data = await response.json();
+
+        if(response.status === 200 && response.ok === true) {
+            setPosts(posts.map(post => (post.id === data.id ? data : post)))
+        }
     }
 
     return (
@@ -74,7 +94,8 @@ export const PostsProvider = ({children}) => {
                 addPost,
                 deletePost,
                 editPost,
-                updatePost
+                updatePost,
+                likePost
             }}
         >
             {children}
