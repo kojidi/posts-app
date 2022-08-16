@@ -9,16 +9,6 @@
         "comments": "10",
         "rate": "8"
       }
-    },
-    {
-      "title": "Article Two",
-      "content": "Voluptas neque quis ab veniam, debitis libero velit quas odio distinctio quos non dolorum. Sed totam fugiat ea.",
-      "info": {
-        "likes": false,
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 2
     }
   ]
 }

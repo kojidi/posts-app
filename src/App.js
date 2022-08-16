@@ -5,7 +5,6 @@ import { PostsProvider } from "./context/PostsContext";
 
 
 function App() { 
-
   return (
     <div className="app">
       <Header />

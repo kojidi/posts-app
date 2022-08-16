@@ -15,8 +15,6 @@
     "sass": "^1.54.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://kojidi.github.io/posts-app",
-  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -47,5 +45,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "homepage": "https://kojidi.github.io/posts-app",
+  "proxy": "https://62fb83f9e4bcaf535186adc8.mockapi.io"
 }
