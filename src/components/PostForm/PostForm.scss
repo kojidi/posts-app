@@ -1,0 +1,51 @@
+.post-form-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        max-width: 450px;
+    
+        .post-form {
+    
+            .form-container {
+                max-width: 450px;
+                padding: 0;
+            }
+        
+            h2 {
+                margin: 5px 5px 15px;
+                text-align: center;
+            }
+        
+            input, textarea {
+                width: 100%;
+                padding: 15px;
+                border: 1 solid #888;
+                border-radius: 10px;
+                margin: 5px 0;
+            }
+        
+            input {
+                border: 1px solid #888;
+            }
+        
+            button {
+                display: block;
+                padding: 8px 15px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(21, 138, 21);
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s;
+        
+                &:hover {
+                    background-color: rgb(10, 94, 10);
+                }
+            }
+        }
+    }
+}
+

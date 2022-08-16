@@ -1,49 +1,19 @@
-import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
-import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 import PostForm from "./components/PostForm/PostForm";
 import Posts from "./components/Posts/Posts";
+import { PostsProvider } from "./context/PostsContext";
 
 
-function App() {
-  
-  const [posts, setPosts] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    data()
-  }, [])
-  
-
-  const data = async () => {
-    const response = await fetch("/posts/?_sort=id&_order=desc");
-    const data = await response.json()
-    setPosts(data)
-    setIsLoading(false)
-  }
-
-  const addPost = async (newPost) => {
-    const response = await fetch("/posts", {
-      method: "POST",
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(newPost)
-    })
-
-    const data = await response.json()
-    setPosts([data, ...posts]);
-
-  }
-
+function App() { 
 
   return (
     <div className="app">
       <Header />
-      <PostForm Submit={addPost}/>
-      {isLoading ? 
-        <LoadingSpinner />
-      :
-        <Posts posts={posts}/>
-      }
+      <PostsProvider>
+        <PostForm />
+        <div className="container"><h2 style={{width: "fit-content", padding: '5px 10px 2px', margin: "30px auto 20px", textAlign: 'center', backgroundColor: '#222', color: '#fff'}}>POSTS</h2></div>
+        <Posts />
+      </PostsProvider>
     </div>
   );
 }

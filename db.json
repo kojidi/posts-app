@@ -5,120 +5,30 @@
       "title": "Article One",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque, amet quae, voluptas neque quis ab veniam, debitis libero velit quas odio distinctio quos non dolorum. Sed totam fugiat ea.",
       "info": {
-        "likes": "5",
+        "likes": true,
         "comments": "10",
         "rate": "8"
       }
     },
     {
-      "id": 2,
       "title": "Article Two",
-      "content": "Quis ab veniam, debitis libero velit quas odio distinctio quos non dolorum. Sed totam fugiat ea.",
+      "content": "Voluptas neque quis ab veniam, debitis libero velit quas odio distinctio quos non dolorum. Sed totam fugiat ea.",
       "info": {
-        "likes": "15",
-        "comments": "5",
-        "rate": "6"
-      }
+        "likes": false,
+        "comments": "0",
+        "rate": "0"
+      },
+      "id": 2
     },
     {
       "id": 3,
-      "title": "Article Three",
-      "content": "Voluptas neque quis ab veniam, debitis libero velit quas odio distinctio quos non dolorum. Sed totam fugiat ea.",
+      "title": "Web development",
+      "content": "This is an article about web development.",
       "info": {
-        "likes": "2",
-        "comments": "2",
-        "rate": "4"
+        "likes": false,
+        "comments": "0",
+        "rate": "0"
       }
-    },
-    {
-      "id": 4,
-      "title": "Article Four",
-      "content": "Lorem ipsum dolor dolorum. Sed totam fugiat ea.",
-      "info": {
-        "likes": "10",
-        "comments": "5",
-        "rate": "3"
-      }
-    },
-    {
-      "title": "sdfsfsdf",
-      "content": "sdfsdfsdf",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 5
-    },
-    {
-      "title": "dsfsdfsdf",
-      "content": "sdfsdfsdf",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 6
-    },
-    {
-      "title": "sdfsdfsdf",
-      "content": "sdfsfsdfsdf",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 7
-    },
-    {
-      "title": "sdfsdf",
-      "content": "sfsfsfs",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 8
-    },
-    {
-      "title": "sdfsfsf",
-      "content": "sdfsfsfsfsfs",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 9
-    },
-    {
-      "title": "sdfsdfsfs",
-      "content": "fsfsfsfsfsfsf",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 10
-    },
-    {
-      "title": "Hello World",
-      "content": "This is a Article about Hamid",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 11
-    },
-    {
-      "title": "Article 5",
-      "content": "This is article 5 and I'm Hamid Rajabi",
-      "info": {
-        "likes": "",
-        "comments": "0",
-        "rate": "0"
-      },
-      "id": 12
     }
   ]
 }
